@@ -1,7 +1,7 @@
 import { PencilIcon, TrashIcon, BookOpenIcon } from "lucide-react";
 
 function BookList({ books, onEdit, onDelete }) {
-  if (books.length === 0) {
+  if (books.length === 0 || books === umdefined) {
     return (
       <div className="bg-white p-6 rounded-lg shadow-md text-center">
         <BookOpenIcon className="w-12 h-12 mx-auto text-gray-400" />
